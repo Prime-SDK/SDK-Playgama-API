@@ -1,5 +1,8 @@
 {
-  "GitUrls": [
-    "https://github.com/playgama/bridge-unity.git"
+  "GitPackages": [
+    {
+      "Name": "com.playgama.bridge",
+      "Url": "https://github.com/playgama/bridge-unity.git"
+    }
   ]
 }
