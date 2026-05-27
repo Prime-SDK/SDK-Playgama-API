@@ -9,4 +9,6 @@ https://wiki.playgama.com/playgama/sdk/engines/unity/setup
 https://github.com/Prime-SDK/SDK-Playgama-API.git
 ```
 
-4. Select `PlaygamaConfiguration` configuration in `PrimeSDK Toolkit` build configuration dropdown.
+4. If you install from PrimeSDK Toolkit, use automatic installation so Playgama Bridge is installed before this API package.
+
+5. Select `PlaygamaConfiguration` configuration in `PrimeSDK Toolkit` build configuration dropdown.
