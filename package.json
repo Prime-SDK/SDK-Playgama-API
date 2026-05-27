@@ -1,10 +1,10 @@
 {
   "name": "com.primesdk.playgama.api",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "displayName": "Playgama API for PrimeSDK",
   "unity": "2021.3",
   "author": {
-    "name": "Roman Likhadievski",
-    "url": "https://github.com/romanlee17"
+    "name": "Prime Pilshing",
+    "url": "https://github.com/Prime-SDK"
   }
 }
