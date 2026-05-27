@@ -1,6 +1,6 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Configuration]
     public class PlaygamaConfiguration : Configuration {

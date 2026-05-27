@@ -1,7 +1,7 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IDeviceInfo))]
     public class PlaygamaDeviceInfo : CommonDeviceInfo {

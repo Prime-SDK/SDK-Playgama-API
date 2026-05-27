@@ -1,9 +1,9 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 using Playgama.Modules.Platform;
-using Logger = MirraGames.SDK.Common.Logger;
+using Logger = PrimeGames.SDK.Common.Logger;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IGameplayReporter))]
     public class PlaygamaGameplayReporter : CommonGameplayReporter {

@@ -1,8 +1,8 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 using Playgama.Modules.Game;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IPause))]
     public class PlaygamaPause : CommonPause {

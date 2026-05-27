@@ -1,8 +1,8 @@
 {
-    "name": "MirraGames.SDK.Playgama",
-    "rootNamespace": "MirraGames.SDK.Playgama",
+    "name": "PrimeGames.SDK.Playgama",
+    "rootNamespace": "PrimeGames.SDK.Playgama",
     "references": [
-        "MirraGames.SDK.Common",
+        "PrimeGames.SDK.Common",
         "PlaygamaBridge",
         "Playgama.Bridge"
     ],

@@ -1,8 +1,8 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 using System.Collections.Generic;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IPlatformInteractions))]
     public class PlaygamaPlatformInteractions : CommonPlatformInteractions {

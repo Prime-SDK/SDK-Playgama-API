@@ -1,7 +1,7 @@
 {
-  "name": "com.mirrasdk.playgama.api",
+  "name": "com.primesdk.playgama.api",
   "version": "1.1.0",
-  "displayName": "Playgama API for MirraSDK5",
+  "displayName": "Playgama API for PrimeSDK",
   "unity": "2021.3",
   "author": {
     "name": "Roman Likhadievski",

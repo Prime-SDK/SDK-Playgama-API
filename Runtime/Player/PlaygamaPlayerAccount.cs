@@ -1,9 +1,9 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 using System;
 using System.Collections.Generic;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IPlayerAccount))]
     public class PlaygamaPlayerAccount : CommonPlayerAccount {

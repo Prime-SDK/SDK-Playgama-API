@@ -1,8 +1,8 @@
-using MirraGames.SDK.Common;
+using PrimeGames.SDK.Common;
 using Playgama;
 using UnityEngine;
 
-namespace MirraGames.SDK.Playgama {
+namespace PrimeGames.SDK.Playgama {
 
     [Provider(typeof(IAudio))]
     public class PlaygamaAudio : CommonAudio, IEventListener<PauseChangeEvent> {
