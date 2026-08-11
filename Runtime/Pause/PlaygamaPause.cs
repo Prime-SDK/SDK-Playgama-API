@@ -1,6 +1,5 @@
 using PrimeGames.SDK.Common;
 using Playgama;
-using Playgama.Modules.Game;
 
 namespace PrimeGames.SDK.Playgama {
 
@@ -11,14 +10,13 @@ namespace PrimeGames.SDK.Playgama {
             dispatcher.OnApplicationPause += OnApplicationPause;
             dispatcher.OnApplicationFocus += OnApplicationFocus;
             dispatcher.Start += () => {
-                Bridge.game.visibilityStateChanged += OnVisibilityStateChanged;
-                OnVisibilityStateChanged(Bridge.game.visibilityState);
+                Bridge.platform.pauseStateChanged += OnPauseStateChanged;
             };
         }
 
-        private void OnVisibilityStateChanged(VisibilityState state) {
-            Logger.CreateText(this, nameof(OnVisibilityStateChanged), state.ToString());
-            Register(nameof(OnVisibilityStateChanged), state == VisibilityState.Hidden);
+        private void OnPauseStateChanged(bool isPaused) {
+            Logger.CreateText(this, nameof(OnPauseStateChanged), isPaused.ToString());
+            Register(nameof(OnPauseStateChanged), isPaused);
         }
 
         public void OnApplicationFocus(bool focusStatus) {
