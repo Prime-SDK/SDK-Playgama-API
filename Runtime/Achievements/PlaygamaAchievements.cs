@@ -66,19 +66,7 @@ namespace PrimeGames.SDK.Playgama {
         }
 
         protected override void UnlockImpl(string achievementId) {
-            Dictionary<string, object> options = new();
-            switch (Bridge.platform.id) {
-                case "y8": {
-                    options.Add("achievement", achievementId);
-                    options.Add("achievementkey", achievementId);
-                    break;
-                }
-                case "lagged": {
-                    options.Add("achievement", achievementId);
-                    break;
-                }
-            }
-            Bridge.achievements.Unlock(options, (isSuccess) => {
+            Bridge.achievements.Unlock(achievementId, (isSuccess) => {
                 Logger.CreateText(this, $"unlock achievement ({achievementId}) status ({isSuccess})");
             });
         }

@@ -34,13 +34,14 @@ namespace PrimeGames.SDK.Playgama {
                     waiters.PopInvokeAll();
                     return;
                 }
-                Dictionary<string, object> options = new();
-                Bridge.remoteConfig.Get(options, (isSuccess, config) => {
+                Bridge.remoteConfig.Get((isSuccess, config) => {
                     collection.Clear();
-                    foreach (KeyValuePair<string, string> pair in config) {
-                        collection.Add(pair.Key, pair.Value);
+                    if (isSuccess && config != null) {
+                        foreach (KeyValuePair<string, string> pair in config) {
+                            collection.Add(pair.Key, pair.Value);
+                        }
                     }
-                    IsFlagsAvailable = true;
+                    IsFlagsAvailable = isSuccess;
                     IsFlagsInitialized = true;
                     waiters.PopInvokeAll();
                 });
