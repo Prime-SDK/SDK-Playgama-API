@@ -1,6 +1,5 @@
 using PrimeGames.SDK.Common;
 using Playgama;
-using System.Collections.Generic;
 
 namespace PrimeGames.SDK.Playgama {
 
@@ -21,25 +20,7 @@ namespace PrimeGames.SDK.Playgama {
         }
 
         protected override void ShareGameImpl(string messageText) {
-            Dictionary<string, object> options = new();
-            switch (Bridge.platform.id) {
-                case "vk": {
-                    options.Add("link", "");
-                    break;
-                }
-                case "facebook": {
-                    options.Add("image", "");
-                    options.Add("text", "");
-                    break;
-                }
-                case "msn": {
-                    options.Add("title", "");
-                    options.Add("image", "");
-                    options.Add("text", "");
-                    break;
-                }
-            }
-            Bridge.social.Share(options, (isSuccess) => {
+            Bridge.social.Share(messageText, (isSuccess) => {
                 if (isSuccess) {
                     Logger.CreateText("share game success");
                 }
