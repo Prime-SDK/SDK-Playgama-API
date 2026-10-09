@@ -12,9 +12,9 @@ namespace PrimeGames.SDK.Playgama {
         private bool desiredPause = false;
 
         public PlaygamaAudio(IEventAggregator eventAggregator, IEventDispatcher dispatcher) : base(eventAggregator) {
-            eventAggregator.Subscribe(this);
             dispatcher.Start += () => {
                 Bridge.platform.audioStateChanged += OnAudioStateChanged;
+                OnAudioStateChanged(Bridge.platform.isAudioEnabled);
             };
             desiredVolume = AudioListener.volume;
             desiredPause = AudioListener.pause;
